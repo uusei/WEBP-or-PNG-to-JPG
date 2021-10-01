@@ -2,6 +2,7 @@ from PIL import Image
 from PIL import ImageFilter
 import os
 import sys
+import emoji
 
 b = 0
 
@@ -177,7 +178,7 @@ save1 = os.getcwd() + '/' + 'jpg'
 if os.path.isdir(save1) == False:
     os.mkdir("jpg")
 
-operator = {'1': list_webp, '2': process1, '5': list_png, '6': process2,  '0': exit1}
+operator = {'1': list_webp, '2': process1, '3': emoji.eomjidown, '5': list_png, '6': process2,  '0': exit1}
 
 
 while b != 1:
@@ -185,7 +186,7 @@ while b != 1:
     print('\n请选择功能'
           '\n1: 查看webp文件'
           '\n2： 转换webp图片为jpg'
-          '\n3: 修改输入相对路径'
+          '\n3: b站表情导入'
           '\n4: 修改输出相对路径'
           '\n5: 查看png文件'
           '\n6： 转换png图片为jpg'
