@@ -47,7 +47,7 @@ def eomjidown():
     with open('emoji.json', 'r', encoding='utf-8') as fp:
         emojis = json.load(fp)
     emoji_packages = emojis['data']['all_packages']
-    package_path = 'png'
+    package_path = 'pic'
     for i in emoji_packages:
          # af = re.match(r'颜文字|2233|小电视|拜年祭|拜年纪|兔|tv|大会员|2020拜年祭|2021拜年纪'
          #            r'星座系列|崩坏|原神|BML|BW|[0-9]|\W+', i['text'], re.M | re.I | re.U)
