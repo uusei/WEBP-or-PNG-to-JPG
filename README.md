@@ -1,4 +1,4 @@
-# pic format change emotion/sticker
+# bili_stickers,which convert emotion/sticker
 方便日常提取表情图等，转换为jpeg格式，默认白底，便于操作<br>
 
 使用方法<br>
