@@ -8,7 +8,10 @@
 
 已有功能<br>
 ---
-1.转换png => jpeg 并添加白底<br>
-2.转换wepb => jpeg 并添加白底<br>
+·转换png => jpeg 并添加白底<br>
+·转换wepb => jpeg 并添加白底<br>
+
+更新两类表情包提取功能<br>
+
 
 bilibili space: [链接](https://space.bilibili.com/480895774) <br>
