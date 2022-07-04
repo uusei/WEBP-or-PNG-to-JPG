@@ -86,10 +86,10 @@ def eomjidown():
          # af = re.match(r'颜文字|2233|小电视|拜年祭|拜年纪|兔|tv|大会员|2020拜年祭|2021拜年纪'
          #            r'星座系列|崩坏|原神|BML|BW|[0-9]|\W+', i['text'], re.M | re.I | re.U)
          # print(af)
-
-         if re.search(r'颜文字|2233|小电视|拜年祭|拜年纪|兔|tv|大会员|2020拜年祭|2021拜年纪|'
-                    r'星座系列|崩坏|原神|BML|BW|[0-9]|FPX|RNG|EDG|LNG|LPL|AG|热词|灵笼', i['text'], re.M|re.I|re.U|re.IGNORECASE) == None:
-            print(i)
+#
+#         if re.search(r'颜文字|2233|小电视|拜年祭|拜年纪|兔|tv|大会员|2020拜年祭|2021拜年纪|'
+#              r'星座系列|崩坏|原神|BML|BW|[0-9]|FPX|RNG|EDG|LNG|LPL|AG|热词|灵笼', i['text'], re.M|re.I|re.U|re.IGNORECASE) == None:
+            print(i['id'], i['text'])
 
     assign = input('请输入需要下载的包\n')
     bar = tqdm(emoji_packages)
@@ -99,6 +99,7 @@ def eomjidown():
             bar.set_description(p['text'])
             download_package(p, package_path)
             print(p['text'])
+
     print('下载完成\n')
 
 def eomjidown_live():

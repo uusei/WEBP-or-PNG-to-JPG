@@ -21,7 +21,7 @@ def f(o):
 
 
 operator = {'1': alltojpeg.list_pic, '2': alltojpeg.process1, '3': emoji.eomjidown,
-            '0': exit1}
+            '4': emoji.eomjidown_live, '0': exit1}
 
 while b != 1:
     print('欢迎使用图片转换jpg小程序')
@@ -29,6 +29,7 @@ while b != 1:
           '\n1: 查看图片文件'
           '\n2: 转换图片为jpg'
           '\n3: b站表情导入'
+          '\n4: b站大舰队表情导入'
           '\n0: 退出'
           )
     optional = str(input("请输入您所需要的功能\n"))
